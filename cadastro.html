@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindSevices</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="quemsomos.html">Quem somos</a> |
+            <a href="missao.html">Missão</a>
+        </nav>
+    </header>
+    <main>
+        <h1>CADASTRO</h1>
+        
+        <form>
+
+            <p>
+                <label for="nome"><i>Nome:</i></label><br>
+                <input type="text" id="nome" name="nome" maxlength="100">
+            </p>
+
+            <p>
+                <label for="cpf"><i>CPF:</i></label><br>
+                <input type="number" id="cpf" name="cpf" placeholder="somente números">
+            </p>
+
+            <p>
+                <label for="nascimento"><i>Data de nascimento:</i></label><br>
+                <input type="date" id="nascimento" name="nascimento">
+            </p>
+
+            <p>
+                <label for="endereco"><i>Endereço:</i></label><br>
+                <input type="text" id="endereco" name="endereco" maxlength="100">
+            </p>
+
+            <p>
+                <label for="email"><i>E-mail:</i></label><br>
+                <input type="email" id="email" name="email" maxlength="50">
+            </p>
+
+            <p>
+                <label for="senha"><i>Senha:</i></label><br>
+                <input type="password" id="senha" name="senha" maxlength="50">
+            </p>
+
+            <h3>Serviço ofertado:</h3>
+            <p>
+                <label for="categoria"><i>Categoria:</i></label><br>
+                <select id="categoria" name="categoria">
+                    <option selected disabled>--Selecione uma opção--</option>
+                    <option value="casa">Para casa</option>
+                    <option value="empresa">Para empresa</option>
+                    <option value="pessoa">Para pessoa</option>
+                    <option value="pet">Para pet</option>
+                </select>
+            </p>
+
+        </form>
+    </main>
+    <footer>
+     
+    </footer>
+
+    
+
+</body>
+</html>
