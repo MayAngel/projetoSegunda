@@ -1,0 +1,48 @@
+body {
+    font-size: 24px;
+    font-family: 'Roboto';
+}
+
+header {
+    background-color: black;
+}
+
+nav {
+    display: block;
+}
+
+div {
+    display: inline-block;
+}
+
+ul, li, a {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    flex: 1 auto;
+    text-align: center;
+    width:22px;
+    height:22px;
+    padding:13px;
+    font-size:16px;
+    line-height:22px;
+}
+
+.header-item {
+    margin: 10px;
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+}
+
+.header-item:hover {
+    color: orangered;
+}
