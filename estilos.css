@@ -1,48 +1,67 @@
-body {
-    font-size: 24px;
-    font-family: 'Roboto';
+body{
+    background-image: url(imagens/conexoes.jpg);
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+header{
     background-color: black;
+    text-align: center;
+    padding: 15px;
 }
 
-nav {
-    display: block;
-}
-
-div {
-    display: inline-block;
-}
-
-ul, li, a {
+a, ul, li{
     list-style-type: none;
+    color: white;
     text-decoration: none;
     display: inline-block;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.header-nav {
-    flex: 1 auto;
-    text-align: center;
-    width:22px;
-    height:22px;
-    padding:13px;
-    font-size:16px;
-    line-height:22px;
-}
-
-.header-item {
-    margin: 10px;
-    color: white;
-    font-family: Arial,Helvetica,sans-serif;
     font-weight: 700;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 0px 20px;
 }
 
-.header-item:hover {
-    color: orangered;
+a:hover{
+    color: rgb(250, 77, 184);
+}
+
+.main-index{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 240px;
+    font-weight: 900;
+    color: #ccc;
+}
+
+.btn{
+    background-color: #ccc;
+    border-style: solid;
+    border-width: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(65, 72, 78);
+    padding: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 50px;
+    border-color: rgb(65, 72, 78);
+}
+
+.btn1{
+    background-color: #ccc;
+    border-style: solid;
+    border-width: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(65, 72, 78);
+    padding: 15px;
+    margin-top: 50px;
+    border-color: rgb(65, 72, 78);
+}
+
+.btn:hover{
+    background-color: white;
+}
+
+.btn1:hover{
+    background-color: white;
 }
