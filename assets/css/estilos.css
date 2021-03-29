@@ -5,7 +5,7 @@ body{
     background-size: 100%;
 >>>>>>> ae7a5dfa896ac7d556412810f7164e074a499b4a:assets/css/estilos.css
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(imagens/conexoes.jpg);
+    background-image: url(../img/conexoes.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
