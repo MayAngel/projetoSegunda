@@ -1,11 +1,6 @@
 body{
-<<<<<<< HEAD:estilos.css
-=======
-    background-image: url(/assets/img/conexoes.jpg);
-    background-size: 100%;
->>>>>>> ae7a5dfa896ac7d556412810f7164e074a499b4a:assets/css/estilos.css
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/conexoes.jpg);
+    background: url(../img/serviços.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
@@ -28,16 +23,17 @@ a, ul, li{
 }
 
 a:hover{
-    color: rgb(250, 77, 184);
+    color: rgb(67, 168, 226);
 }
 
 .main-index{
     text-align: center;
-    font-size: 60px;
-    padding-top: 240px;
+    font-size: 50px;
+    padding-top: 200px;
     padding-bottom: 150px;
-    font-weight: 900;
-    color: #ccc;
+    font-weight: 800;
+    color: black;
+    text-shadow:rgb(255, 255, 255) 2px -2px, rgb(255, 255, 255) -2px 2px, rgb(255, 255, 255) 2px 2px, rgb(255, 255, 255) -2px -2px;
 }
 
 .btn{
@@ -46,12 +42,12 @@ a:hover{
     border-width: 4px;
     font-size: 30px;
     font-weight: 900;
-    color: rgb(65, 72, 78);
+    color: black;
     padding: 15px;
     padding-left: 32px;
     padding-right: 32px;
     margin-top: 50px;
-    border-color: rgb(65, 72, 78);
+    border-color: black;
 }
 
 .btn1{
@@ -60,10 +56,10 @@ a:hover{
     border-width: 4px;
     font-size: 30px;
     font-weight: 900;
-    color: rgb(65, 72, 78);
+    color: black;
     padding: 15px;
     margin-top: 50px;
-    border-color: rgb(65, 72, 78);
+    border-color: black;
 }
 
 .btn:hover{
@@ -73,3 +69,71 @@ a:hover{
 .btn1:hover{
     background-color: white;
 }
+
+.campos {
+	border-radius: 5px;
+	padding: 4px;
+    width: 250px;
+	border-style: solid;
+	border-width: 2px;
+	background-color: white;
+	border-color: black;
+}
+
+h1{
+    font-family: Verdana;
+	font-size: 50px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-weight: 800;
+    text-shadow: white 2px -2px, white -2px 2px, white 2px 2px, white -2px -2px;
+}
+
+h3{
+    font-family: Verdana;
+	font-size: 25px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+p{
+    font-family: Verdana;
+	font-size: 20px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+
+.main{
+    text-align: center;
+}
+
+.btn2{
+    background-color: #ccc;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    margin-top: 25px;
+    border-color: black;
+    text-align: center;
+}
+
+.btn2:hover{
+    background-color: white;
+}
+
+#part1 {
+    width: 300px;
+    float:left;
+    }
+    
+#part2 {
+    width: 300px;
+    float:left;
+    }

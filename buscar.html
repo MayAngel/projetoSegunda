@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/estilos.css">
-    <title>FindSevices</title>
+    <title>FindServices</title>
 </head>
 <body>
     <header class="header">
@@ -18,13 +18,13 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <h1>BUSCAR SERVIÇO</h1>
         <form>
 
             <p>
-                <label for="categoria"><i>Categoria:</i></label><br>
-                <select id="categoria" name="categoria">
+                <label for="categoria"><i>Categoria:</i></label><br><br>
+                <select id="categoria" name="categoria" class="campos">
                     <option selected disabled>--Selecione uma opção--</option>
                     <option value="casa">Para casa</option>
                     <option value="empresa">Para empresa</option>
@@ -34,15 +34,15 @@
             </p>
 
             <p>
-                <label for="servico"><i>Serviço:</i></label><br>
-                <select id="servico" name="servico">
+                <label for="servico"><i>Serviço:</i></label><br><br>
+                <select id="servico" name="servico" class="campos">
                     <option selected disabled>--Selecione uma opção--</option>
                 </select>
             </p>
 
             <p>
-                <label for="localidade"><i>Localidade:</i></label><br>
-                <select id="localidade" name="localidade">
+                <label for="localidade"><i>Localidade:</i></label><br><br>
+                <select id="localidade" name="localidade" class="campos">
                     <option selected disabled>--Selecione uma opção--</option>
                 </select>
             </p>
@@ -50,7 +50,7 @@
             
         </form>
 
-        <a href="resultado.html"><button>Filtrar</button></a>
+        <a href="resultado.html"><button class="btn2">Filtrar</button></a>
     </main>
     <footer>
       

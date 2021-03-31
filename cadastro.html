@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/estilos.css">
-    <title>FindSevices</title>
+    <title>FindServices</title>
 </head>
 <body>
     <header class="header">
@@ -23,40 +23,43 @@
         
         <form>
 
-            <p>
-                <label for="nome"><i>Nome:</i></label><br>
-                <input type="text" id="nome" name="nome" maxlength="100">
-            </p>
+            <div id="part1">
+                <p>
+                    <label for="nome"><i>Nome:</i></label><br><br>
+                    <input type="text" id="nome" name="nome" maxlength="100" class="campos">
+                </p>
 
-            <p>
-                <label for="cpf"><i>CPF:</i></label><br>
-                <input type="number" id="cpf" name="cpf" placeholder="somente números">
-            </p>
+                <p>
+                    <label for="cpf"><i>CPF:</i></label><br><br>
+                    <input type="number" id="cpf" name="cpf" placeholder="somente números" class="campos">
+                </p>
 
-            <p>
-                <label for="nascimento"><i>Data de nascimento:</i></label><br>
-                <input type="date" id="nascimento" name="nascimento">
-            </p>
+                <p>
+                    <label for="nascimento"><i>Data de nascimento:</i></label><br><br>
+                    <input type="date" id="nascimento" name="nascimento" class="campos">
+                </p>
+            </div>
+            <div id="part2">
+                <p>
+                    <label for="endereco"><i>Endereço:</i></label><br><br>
+                    <input type="text" id="endereco" name="endereco" maxlength="100" class="campos">
+                </p>
 
-            <p>
-                <label for="endereco"><i>Endereço:</i></label><br>
-                <input type="text" id="endereco" name="endereco" maxlength="100">
-            </p>
+                <p>
+                    <label for="email"><i>E-mail:</i></label><br><br>
+                    <input type="email" id="email" name="email" maxlength="50" class="campos">
+                </p>
 
-            <p>
-                <label for="email"><i>E-mail:</i></label><br>
-                <input type="email" id="email" name="email" maxlength="50">
-            </p>
+                <p>
+                    <label for="senha"><i>Senha:</i></label><br><br>
+                    <input type="password" id="senha" name="senha" maxlength="50"class="campos">
+                </p>
+            </div>
 
+            <h3>Serviço Ofertado:</h3>
             <p>
-                <label for="senha"><i>Senha:</i></label><br>
-                <input type="password" id="senha" name="senha" maxlength="50">
-            </p>
-
-            <h3>Serviço ofertado:</h3>
-            <p>
-                <label for="categoria"><i>Categoria:</i></label><br>
-                <select id="categoria" name="categoria">
+                <label for="categoria"><i>Categoria:</i></label><br><br>
+                <select id="categoria" name="categoria" class="campos">
                     <option selected disabled>--Selecione uma opção--</option>
                     <option value="casa">Para casa</option>
                     <option value="empresa">Para empresa</option>
