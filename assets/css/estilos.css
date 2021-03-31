@@ -1,37 +1,57 @@
+<<<<<<< HEAD
+/* body{
+=======
 body{
 <<<<<<< HEAD:estilos.css
 =======
+>>>>>>> 992f06eb49fbacc08805ada7f9a0d530dee4fd89
     background-image: url(/assets/img/conexoes.jpg);
     background-size: 100%;
 >>>>>>> ae7a5dfa896ac7d556412810f7164e074a499b4a:assets/css/estilos.css
     font-family: Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
+} */
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+=======
     background-image: url(../img/conexoes.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
+>>>>>>> 992f06eb49fbacc08805ada7f9a0d530dee4fd89
 }
 
-header{
+header {
     background-color: black;
     text-align: center;
     padding: 15px;
 }
 
-a, ul, li{
+a,
+ul,
+li {
     list-style-type: none;
     color: white;
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0px 20px;
 }
 
-a:hover{
+a:hover {
     color: rgb(250, 77, 184);
 }
 
-.main-index{
+.main-index {
     text-align: center;
     font-size: 60px;
     padding-top: 240px;
@@ -40,7 +60,7 @@ a:hover{
     color: #ccc;
 }
 
-.btn{
+.btn {
     background-color: #ccc;
     border-style: solid;
     border-width: 4px;
@@ -54,7 +74,19 @@ a:hover{
     border-color: rgb(65, 72, 78);
 }
 
-.btn1{
+.btn-servico {
+    background-color: #ccc;
+    border-style: dashed;
+    border-width: 1px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: rgb(65, 72, 78);
+    padding: 15px;
+    margin-top: 10px;
+    border-color: rgb(65, 72, 78);
+}
+
+.btn1 {
     background-color: #ccc;
     border-style: solid;
     border-width: 4px;
@@ -66,10 +98,123 @@ a:hover{
     border-color: rgb(65, 72, 78);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white;
 }
 
-.btn1:hover{
+.btn1:hover {
     background-color: white;
+}
+
+.rounded-3 {
+    border-radius: .3rem !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.p-5 {
+    padding: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+
+.display-5 {
+    font-size: 3rem;
+}
+
+.display-4 {
+    font-size: 2rem;
+}
+
+
+.display-3 {
+    font-size: 1rem;
+}
+
+.fs-4 {
+    font-size: 1.5rem !important;
+}
+
+.fs-4 {
+    font-size: calc(1.275rem + .3vw) !important;
+}
+
+.col-md-8 {
+    flex: 0 0 auto;
+    width: 95%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem !important;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.form-control {
+    display: block;
+    width: 95%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    color: #212529;
+    font-size: 1.2rem !important;
 }
