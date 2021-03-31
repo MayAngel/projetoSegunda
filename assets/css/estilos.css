@@ -1,42 +1,54 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: url(../img/serviços.jpg);
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+     background-image: url(../img/servicos.jpg); 
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
 }
 
-header{
+header {
     background-color: black;
     text-align: center;
     padding: 15px;
 }
 
-a, ul, li{
+a,
+ul,
+li {
     list-style-type: none;
     color: white;
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0px 20px;
 }
 
-a:hover{
-    color: rgb(67, 168, 226);
+a:hover {
+    color: rgb(39, 182, 248);
 }
 
-.main-index{
+.main-index {
     text-align: center;
     font-size: 50px;
     padding-top: 200px;
     padding-bottom: 150px;
+    font-weight: 900;
+    color: #ccc;
     font-weight: 800;
     color: black;
     text-shadow:rgb(255, 255, 255) 2px -2px, rgb(255, 255, 255) -2px 2px, rgb(255, 255, 255) 2px 2px, rgb(255, 255, 255) -2px -2px;
 }
 
-.btn{
+.btn {
     background-color: #ccc;
     border-style: solid;
     border-width: 4px;
@@ -50,7 +62,28 @@ a:hover{
     border-color: black;
 }
 
-.btn1{
+.btn:hover {
+    background-color: white;
+}
+
+
+.btn-servico {
+    background-color: #ccc;
+    border-style: dashed;
+    border-width: 1px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: rgb(65, 72, 78);
+    padding: 15px;
+    margin-top: 10px;
+    border-color: rgb(65, 72, 78);
+}
+
+.btn-servico:hover {
+    background-color: #ced4da;
+}
+
+.btn1 {
     background-color: #ccc;
     border-style: solid;
     border-width: 4px;
@@ -62,12 +95,144 @@ a:hover{
     border-color: black;
 }
 
-.btn:hover{
+.btn2{
+    background-color: #ccc;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+    margin-top: 25px;
+    border-color: black;
+    text-align: center;
+}
+
+.btn2:hover{
     background-color: white;
 }
 
-.btn1:hover{
+
+.btn1:hover {
     background-color: white;
+}
+
+.rounded-3 {
+    border-radius: .3rem !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.bg-transparente {
+    background-color: #f8f9fa !important;
+    opacity: 0.8;
+}
+
+
+.p-5 {
+    padding: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+
+.display-5 {
+    font-size: 3rem;
+}
+
+.display-4 {
+    font-size: 2rem;
+}
+
+
+.display-3 {
+    font-size: 1rem;
+}
+
+.fs-4 {
+    font-size: 1.5rem !important;
+}
+
+.fs-4 {
+    font-size: calc(1.275rem + .3vw) !important;
+}
+
+.col-md-8 {
+    flex: 0 0 auto;
+    width: 95%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem !important;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.form-control {
+    display: block;
+    width: 95%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    color: #212529;
+    font-size: 1.2rem !important;
 }
 
 .campos {
@@ -99,41 +264,14 @@ h3{
     font-weight: bold;
 }
 
-p{
-    font-family: Verdana;
-	font-size: 20px;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    font-weight: bold;
-}
-
-.main{
-    text-align: center;
-}
-
-.btn2{
-    background-color: #ccc;
-    border-style: solid;
-    border-width: 2px;
-    font-size: 15px;
-    color: black;
-    padding: 5px;
-    margin-top: 25px;
-    border-color: black;
-    text-align: center;
-}
-
-.btn2:hover{
-    background-color: white;
-}
-
 #part1 {
-    width: 300px;
+    width: 45%;
     float:left;
+    padding: 15px;
     }
-    
+
 #part2 {
-    width: 300px;
+    width: 45%;
     float:left;
+    padding: 15px;
     }

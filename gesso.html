@@ -20,54 +20,62 @@
                 </ul>
             </nav>
         </header>
+
         <div class="p-5 mb-4 rounded-3">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="display-4 fw-bold">BUSCAR SERVIÇO</h4>
+                    <h4 class="display-4 fw-bold">Instalação de Gesso</h4>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title"></h5>
                     <p class="card-text">
                     <p class="col-md-8 fs-4">
                         <!-- <form> -->
+
                     <p>
-                        <label class="form-label" for="categoria"><i>Categoria:</i></label><br>
-                        <select class="form-control" id="categoria" name="categoria">
-                            <option selected disabled>--Selecione uma opção--</option>
-                            <option value="casa">Para casa</option>
-                            <option value="empresa">Para empresa</option>
-                            <option value="pessoa">Para pessoa</option>
-                            <option value="pet">Para pet</option>
+                        <label for="ambiente"><i>Selecione o ambiente:</i></label><br>
+                        <select class="form-control" id="ambiente">
+                            <option value="">Selecione o ambiente</option>
+                            <option value="banheiro">Banheiro</option>
+                            <option value="cozinha">Cozinha</option>
+                            <option value="escritorio">Escritório</option>
+                            <option value="quarto">Quarto</option>
+                            <option value="sala">Sala</option>
                         </select>
+                    </p>
+                    <h2>Informe as medidas</h2>
+
+                    <p>
+                        <label class="form-label" for="largura"><i>Largura: </i></label><br>
+                        <input class="form-control" type="number" id="largura" name="largura"
+                            placeholder="informe a largura em centímetros">
                     </p>
 
                     <p>
-                        <label class="form-label" for="servico"><i>Serviço:</i></label><br>
-                        <select class="form-control" id="servico" name="servico">
-                            <option selected disabled>--Selecione uma opção--</option>
-                        </select>
+                        <label class="form-label" for="altura"><i>Altura: </i></label><br>
+                        <input class="form-control" type="number" id="altura" name="altura"
+                            placeholder="informe a altura em centímetros">
                     </p>
 
                     <p>
-                        <label class="form-label" for="localidade"><i>Localidade:</i></label><br>
-                        <select class="form-control" id="localidade" name="localidade">
-                            <option selected disabled>--Selecione uma opção--</option>
-                        </select>
+                        <label class="form-label" for="comprimento"><i>Comprimento: </i></label><br>
+                        <input class="form-control" type="number" id="comprimento" name="comprimento"
+                            placeholder="informe a comprimento em centímetros">
                     </p>
 
-                    <a href="resultado.html"><button class="btn2">Filtrar</button></a>
+
                     <!-- </form> -->
+
                     </p>
                     </p>
                 </div>
             </div>
         </div>
 
+
         <footer>
 
         </footer>
-
     </body>
 
 </html>
-
