@@ -33,11 +33,7 @@ li {
 }
 
 a:hover {
-<<<<<<< HEAD
-    color: rgb(250, 77, 184);
-=======
     color: rgb(39, 182, 248);
->>>>>>> 85e9bf7632350de12a9631ca64e324e84d52911e
 }
 
 .main-index {
@@ -83,26 +79,6 @@ a:hover {
     border-color: rgb(65, 72, 78);
 }
 
-<<<<<<< HEAD
-.btn:hover {
-    background-color: white;
-}
-
-
-.btn-servico {
-    background-color: #ccc;
-    border-style: dashed;
-    border-width: 1px;
-    font-size: 1rem;
-    font-weight: 900;
-    color: rgb(65, 72, 78);
-    padding: 15px;
-    margin-top: 10px;
-    border-color: rgb(65, 72, 78);
-}
-
-=======
->>>>>>> 85e9bf7632350de12a9631ca64e324e84d52911e
 .btn-servico:hover {
     background-color: #ced4da;
 }
@@ -288,10 +264,6 @@ h3{
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 85e9bf7632350de12a9631ca64e324e84d52911e
 #part1 {
     width: 45%;
     float:left;
@@ -302,8 +274,4 @@ h3{
     width: 45%;
     float:left;
     padding: 15px;
-<<<<<<< HEAD
     }
-=======
-    }
->>>>>>> 85e9bf7632350de12a9631ca64e324e84d52911e
