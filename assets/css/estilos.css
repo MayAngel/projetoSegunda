@@ -30,10 +30,14 @@ li {
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px 20px;
+    transition: color .3s linear;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
 }
 
 a:hover {
-    color: rgb(39, 182, 248);
+    color: #f1c123;
 }
 
 .main-index {
@@ -49,7 +53,7 @@ a:hover {
 }
 
 .btn {
-    background-color: #ccc;
+    background-color: rgba(156, 156, 156, 0.5); /*rgba para cores com transparencia, onde o a é o alfa que varia de 0 a 1, sendo 1 opaco e 0 totalmente transparente*/
     border-style: solid;
     border-width: 4px;
     font-size: 30px;
@@ -63,7 +67,7 @@ a:hover {
 }
 
 .btn:hover {
-    background-color: white;
+    background-color: rgba(233, 227, 227, 0.5);
 }
 
 
@@ -84,7 +88,7 @@ a:hover {
 }
 
 .btn1 {
-    background-color: #ccc;
+    background-color: rgba(156, 156, 156, 0.5); /*rgba para cores com transparencia, onde o a é o alfa que varia de 0 a 1, sendo 1 opaco e 0 totalmente transparente*/
     border-style: solid;
     border-width: 4px;
     font-size: 30px;
@@ -108,12 +112,12 @@ a:hover {
 }
 
 .btn2:hover{
-    background-color: white;
+    background-color: rgba(233, 227, 227, 0.5);
 }
 
 
 .btn1:hover {
-    background-color: white;
+    background-color: rgba(233, 227, 227, 0.5);
 }
 
 .rounded-3 {
@@ -274,4 +278,15 @@ h3{
     width: 45%;
     float:left;
     padding: 15px;
+    }
+
+.rodape{
+    background: #f1c123;
+    height: 80px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 80px; /*quando tiver apenas 1 linha de texto, para centralizar, colocar mesmo valor do height para o line-height*/
+    margin-top: 183px;
     }
