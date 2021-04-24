@@ -1,6 +1,6 @@
-body {
+.body-index {
     margin: 0;
-    font-family: var(--bs-font-sans-serif);
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -14,22 +14,32 @@ body {
     background-repeat: no-repeat;
 }
 
+.body-cadastro, .body-buscar, .body-missao, .body-quemsomos, .body-resultado {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgb(253, 250, 222);
+    margin: 0px;
+}
+
+body form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
     background-color: black;
     text-align: center;
     padding: 15px;
 }
 
-a,
-ul,
-li {
+header a, ul, li {
     list-style-type: none;
     color: white;
     text-decoration: none;
     display: inline-block;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0px 20px;
+    padding-left: 20px;
     transition: color .3s linear;
     text-transform: uppercase;
     font-size: 12px;
@@ -40,10 +50,23 @@ a:hover {
     color: #f1c123;
 }
 
+article ul,li {
+    color: black;
+    
+}
+
+article {
+    padding-bottom: 200px;
+}
+
+form{
+    padding-bottom: 100px;
+}
+
 .main-index {
     text-align: center;
     font-size: 50px;
-    padding-top: 200px;
+    padding-top: 250px;
     padding-bottom: 150px;
     font-weight: 900;
     color: #ccc;
@@ -131,8 +154,8 @@ a:hover {
 .bg-transparente {
     background-color: #f8f9fa !important;
     opacity: 0.8;
+    margin-bottom: 50px;
 }
-
 
 .p-5 {
     padding: 3rem !important;
@@ -145,7 +168,6 @@ a:hover {
 .fw-bold {
     font-weight: 700 !important;
 }
-
 
 .display-5 {
     font-size: 3rem;
@@ -249,7 +271,17 @@ p {
 	border-color: black;
 }
 
-h1{
+form h1 {
+    font-family: Verdana;
+	font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 800;
+    text-shadow: white 2px -2px, white -2px 2px, white 2px 2px, white -2px -2px;
+}
+
+main h1{
     font-family: Verdana;
 	font-size: 50px;
     text-align: center;
@@ -272,13 +304,13 @@ h3{
     width: 45%;
     float:left;
     padding: 15px;
-    }
+}
 
 #part2 {
     width: 45%;
     float:left;
     padding: 15px;
-    }
+}
 
 .rodape{
     background: #f1c123;
@@ -288,5 +320,76 @@ h3{
     color: white;
     text-shadow: 2px 2px 2px black;
     line-height: 80px; /*quando tiver apenas 1 linha de texto, para centralizar, colocar mesmo valor do height para o line-height*/
-    margin-top: 183px;
+    margin-top: 83px;
+}
+
+
+
+
+
+
+input, textarea, select {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+     
+  form {
+    margin: auto;
+    max-width: 900px;
+    font-family: "Roboto";
+  }
+  
+  button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 5px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="checkbox"]+label {
+    display: inline;
+  }
+  
+  fieldset {
+    border-width: 0;
+    padding: 0;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"] {
+    margin: .2em auto .8em auto;
+    width: 100%;
+  }
+  
+  #cep {
+    width: auto;
+  }
+  
+  select, fieldset, legend {
+    margin: .2em auto .8em auto;
+  }
+  
+  legend {
+    margin-left: -.1em;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 500px){
+    label {
+      display: inline-block;
+      width: 15%;
+      text-align: right;
     }
+  
+    input[type="text"], input[type="email"], input[type="tel"] {
+      width: 75%;
+    }
+  }
+
+  .texto {
+      width: 500px;
+      margin-top: 10px;
+      height: 100px;
+  }
