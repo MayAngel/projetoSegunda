@@ -47,7 +47,7 @@ header a, ul, li {
 }
 
 a:hover {
-    color: #f1c123;
+    color: #ffa600;
 }
 
 article ul,li {
@@ -66,8 +66,13 @@ form{
 .main-index {
     text-align: center;
     font-size: 50px;
+<<<<<<< HEAD
     padding-top: 250px;
     padding-bottom: 150px;
+=======
+    padding-top: 150px;
+    padding-bottom: 100px;
+>>>>>>> e9dec9b2f4bbd8f3f9154bb54280a4fabed3c59f
     font-weight: 900;
     color: #ccc;
     font-weight: 800;
@@ -85,7 +90,7 @@ form{
     padding: 15px;
     padding-left: 32px;
     padding-right: 32px;
-    margin-top: 50px;
+    margin-top: 20px;
     border-color: black;
 }
 
@@ -193,6 +198,10 @@ form{
 .col-md-8 {
     flex: 0 0 auto;
     width: 95%;
+}
+
+.center {
+    text-align:center;
 }
 
 p {
@@ -320,6 +329,7 @@ h3{
     color: white;
     text-shadow: 2px 2px 2px black;
     line-height: 80px; /*quando tiver apenas 1 linha de texto, para centralizar, colocar mesmo valor do height para o line-height*/
+<<<<<<< HEAD
     margin-top: 83px;
 }
 
@@ -393,3 +403,20 @@ input, textarea, select {
       margin-top: 10px;
       height: 100px;
   }
+=======
+    margin-top: 183px;
+    }
+
+.link{
+    list-style-type: none;
+    color: rgb(4, 0, 255);
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color .3s linear;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+>>>>>>> e9dec9b2f4bbd8f3f9154bb54280a4fabed3c59f
