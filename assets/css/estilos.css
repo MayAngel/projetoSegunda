@@ -90,9 +90,16 @@ table{
     text-align: center;
     padding-top: 15px;
     padding-bottom: 25px;
-    width: 80%
+    width: 100%
 
 }
+th {
+    font-weight: bold;
+}
+th,td {
+    padding: 5px;
+    border: 1px solid black;
+  }
 table button{
   
         background-color: #ccc;
