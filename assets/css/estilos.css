@@ -23,6 +23,7 @@
     line-height: 1.5;
     color: #212529;
     background-color: rgb(253, 250, 222);
+    
     /* -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
      background-image: url(../img/servicos.jpg);
@@ -273,7 +274,6 @@ p {
     min-width: 0;
     width: 550px;
     height: 450px;
-    margin-left: 355px;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
@@ -289,6 +289,10 @@ p {
     border: 2px solid rgba(0, 0, 0, 0.125);
 }
 
+#login {
+    margin: 0 200px;
+}
+
 .card-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
@@ -300,10 +304,10 @@ p {
     border: 2px solid rgba(0, 0, 0, 0.125);
 }
 
-.card-title {
+/* .card-title {
     margin-bottom: 0.5rem;
     font-size: 1.5rem !important;
-}
+} */
 
 .card-text:last-child {
     margin-bottom: 0;
