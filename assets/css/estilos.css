@@ -12,6 +12,24 @@
      background-position: center;
      background-size: contain;
     background-repeat: no-repeat;
+    
+}
+
+.body-index-login{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgb(253, 250, 222);
+    /* -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+     background-image: url(../img/servicos.jpg);
+     background-position: center;
+     background-size: contain;
+    background-repeat: no-repeat; */
+    
 }
 
 .body-cadastro, .body-buscar, .body-missao, .body-quemsomos, .body-resultado {
@@ -129,7 +147,8 @@ form{
     font-size: 25px;
     color: black;
     padding: 5px;
-    margin-top: 25px;
+    margin-top: 5px;
+    margin-left: 197px;
     border-color: black;
     text-align: center;
 }
@@ -209,18 +228,22 @@ p {
     display: flex;
     flex-direction: column;
     min-width: 0;
+    width: 550px;
+    height: 450px;
+    margin-left: 355px;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
+    border-radius: 0.75rem;
 }
 
 .card-header {
+    flex: 1 1 auto;
     padding: 0.5rem 1rem;
     margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: rgb(242 126 104);
+    border: 2px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-header:first-child {
@@ -230,6 +253,8 @@ p {
 .card-body {
     flex: 1 1 auto;
     padding: 1rem 1rem;
+    background-color: #ffeeb4;
+    border: 2px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-title {
@@ -249,7 +274,7 @@ p {
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    background-color: #fff;
+    background-color: #f7f0e0;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     -webkit-appearance: none;
@@ -261,6 +286,7 @@ p {
 
 .form-label {
     margin-bottom: 0.5rem;
+    margin-left: 49px;
     color: #212529;
     font-size: 1.2rem !important;
 }
@@ -298,6 +324,15 @@ main h1{
 h3{
     font-family: Verdana;
 	font-size: 25px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+.cadastre{
+    font-family: Verdana;
+	font-size: 12px;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 25px;
