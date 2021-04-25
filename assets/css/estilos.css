@@ -362,7 +362,7 @@ input, textarea, select {
     padding: 0;
   }
   
-  input[type="text"], input[type="email"], input[type="tel"] {
+  input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
     margin: .2em auto .8em auto;
     width: 100%;
   }
@@ -387,7 +387,7 @@ input, textarea, select {
       text-align: right;
     }
   
-    input[type="text"], input[type="email"], input[type="tel"] {
+    input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
       width: 75%;
     }
   }
