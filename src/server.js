@@ -22,10 +22,15 @@ app.post("/cadastro" , (request, response)=>{
     response.sendFile(path.join(__dirname, './assets/html/cadastro.html'));
 });
 //Fim Cadastro
-
+//Inicio Cadastro de Usuario
 app.get("/cadastroUsuario" , (request, response)=>{
-    response.sendFile(path.join(__dirname, './assets/html/cadastroUsuarios.html'));
+    response.sendFile(path.join(__dirname, './assets/html/cadastroUsuario.html'));
 }); 
+
+//app.post("/cadastroUsuario" , (request, response)=>{
+//    response.sendFile(path.join(__dirname, './assets/html/cadastroUsuario.html'));
+//}); 
+//Fim Cadastro de Usuario
 
 app.get("/detalhesDoServico" , (request, response)=>{
     response.sendFile(path.join(__dirname, './assets/html/detalhesDoServico.html'));
@@ -33,7 +38,11 @@ app.get("/detalhesDoServico" , (request, response)=>{
 
 app.get("/login" , (request, response)=>{
     response.sendFile(path.join(__dirname, './assets/html/login.html'));
-}); 
+});
+app.post("/login" , (request, response)=>{
+    response.sendFile(path.join(__dirname, './assets/html/login.html'));
+});
+
 
 app.get("/missao" , (request, response)=>{
     response.sendFile(path.join(__dirname, './assets/html/missao.html'));
