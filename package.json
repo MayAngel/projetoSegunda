@@ -1,0 +1,18 @@
+{
+  "name": "projetoSegunda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MayAngel/projetoSegunda.git",
+  "author": "Kleyton Klein <17971295+Tkporto@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
