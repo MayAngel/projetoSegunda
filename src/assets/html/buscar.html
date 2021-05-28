@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/estilos.css">
+        <title>FindServices</title>
+    </head>
+
+    <body class="body-buscar">
+        <header class="header">
+            <nav class="header-nav">
+                <ul class="header-lista">
+                    <li><a class="header-item" href="/">Home</a></li>
+                    <li><a class="header-item" href="/quemsomos">Quem somos</a></li>
+                    <li><a class="header-item" href="/missao">Missão</a></li>
+                    <li><a class="header-item" href="/login">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="p-5 mb-4 rounded-3">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="display-4 fw-bold">BUSCAR SERVIÇO</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                    <p class="col-md-8 fs-4">
+                        <!-- <form> -->
+                            <div>
+                                <label for="serviço">Serviço</label> 
+                                <select name="serviço" id="serviço">
+                                    <option selected >--selecione a categoria: --</option>
+                                    <optgroup label="CASA">
+                                      <option value="chaveiro">chaveiro</option>
+                                      <option value="diarista">diarista</option>
+                                      <option value="eletricista">eletricista</option>
+                                      <option value="encanador">encanador</option>
+                                      <option value="jardineiro">jardineiro</option>
+                                      <option value="marceneiro">marceneiro</option>
+                                      <option value="pedreiro">pedreiro</option>
+                                    </optgroup>
+                                    <optgroup label="CURSO E TREINAMENTO">
+                                      <option value="idiomas">idioma</option>
+                                      <option value="tecnologia">técnologia</option>
+                                      <option value="costura">corte e costura</option>
+                                    </optgroup>
+                                    <optgroup label="EVENTO">
+                                        <option value="infantil">festa infantil</option>
+                                        <option value="casamento">casamento</option>
+                                        <option value="cha bebe">chá de bebê</option>
+                                    </optgroup>
+                                    <optgroup label="PESSOAL">
+                                        <option value="manicure">manicure</option>
+                                        <option value="podologia">podologia</option>
+                                        <option value="cabelo">cabelo</option>
+                                    </optgroup>
+                                    <optgroup label="PET">
+                                        <option value="banho e tosa">banho e tosa</option>
+                                        <option value="adereços">adereços</option>
+                                        <option value="adestramento">adestramento</option>
+                                        <option value="passeador">passeador</option>
+                                    </optgroup>
+                                    <optgroup label="SAÚDE">
+                                        <option value="nutricionista">nutricionista</option>
+                                        <option value="personal trainer">personal trainer</option>
+                                        <option value="pilates">pilates</option>
+                                    </optgroup>
+                                    <optgroup label="TRANSPORTE">
+                                        <option value="frete">frete</option>
+                                    </optgroup>
+                                    <optgroup label="VEÍCULO">
+                                        <option value="mecanico">mecânico</option>
+                                        <option value="limpeza">limpeza</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </select>
+                    </p>
+                    <p class="col-md-8 fs-4">
+                        <div>
+                                <label for="Estado">Estado</label>
+                                <select name="Estado" id="Estado">
+                                    <option selected>--Selecione uma opção--</option>
+                                                    <option value="AC">Acre</option>
+                                                    <option value="AL">Alagoas</option>
+                                                    <option value="AP">Amapá</option>
+                                                    <option value="AM">Amazonas</option>
+                                                    <option value="BA">Bahia</option>
+                                                    <option value="CE">Ceará</option>
+                                                    <option value="DF">Distrito Federal</option>
+                                                    <option value="ES">Espírito Santo</option>
+                                                    <option value="GO">Goiás</option>
+                                                    <option value="MA">Maranhão</option>
+                                                    <option value="MT">Mato Grosso</option>
+                                                    <option value="MS">Mato Grosso do Sul</option>
+                                                    <option value="MG">Minas Gerais</option>
+                                                    <option value="PA">Pará</option>
+                                                    <option value="PB">Paraíba</option>
+                                                    <option value="PR">Paraná</option>
+                                                    <option value="PE">Pernambuco</option>
+                                                    <option value="PI">Piauí</option>
+                                                    <option value="RJ">Rio de Janeiro</option>
+                                                    <option value="RN">Rio Grande do Norte</option>
+                                                    <option value="RS">Rio Grande do Sul</option>
+                                                    <option value="RO">Rondônia</option>
+                                                    <option value="RR">Roraima</option>
+                                                    <option value="SC">Santa Catarina</option>
+                                                    <option value="SP">São Paulo</option>
+                                                    <option value="SE">Sergipe</option>
+                                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                    </p> 
+                    <p class="col-md-8 fs-4">
+                    <div>
+                        <label for="city">Cidade</label>
+                        <input id="city" name="city" type="text">
+                    </div>    
+                    </p>
+                             
+                    <a href="/resultado"><button class="btn2">Pesquisar</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="rodape">
+            <p>Copyright  &copy; 2021</p>
+        </footer>
+
+    </body>
+
+</html>
+
