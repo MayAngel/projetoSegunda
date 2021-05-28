@@ -6,57 +6,77 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, '../src')));
 
-//ROTAS
-app.get("/" , (request, response)=>{
-    response.sendFile(path.join(__dirname, './assets/html/index.html'));
-}); 
+//Apontamento da engine do EJS
+app.set("view engine", "ejs");
+app.set("views", (path.join(__dirname, './views')));
 
-app.get("/buscar" , (request, response)=>{
+//INICIO ROTAS
+
+//INICIO INDEX
+app.get("/", (request, response) => {
+    response.render("index");
+});
+
+
+//FIM INDEX
+//INICIO BUSCAR
+app.get("/buscar", (request, response) => {
     response.sendFile(path.join(__dirname, './assets/html/buscar.html'));
-}); 
-//Inicio Cadastro
-app.get("/cadastro" , (request, response)=>{
+});
+//FIM BUSCAR
+//INICIO CADASTRO
+app.get("/cadastro", (request, response) => {
     response.sendFile(path.join(__dirname, './assets/html/cadastro.html'));
 });
-app.post("/cadastro" , (request, response)=>{
+app.post("/cadastro", (request, response) => {
     response.sendFile(path.join(__dirname, './assets/html/cadastro.html'));
 });
-//Fim Cadastro
-//Inicio Cadastro de Usuario
-app.get("/cadastroUsuario" , (request, response)=>{
+//FIM CADASTRO
+//INICIO CADASTRO USUARIO
+app.get("/cadastroUsuario", (request, response) => {
     response.sendFile(path.join(__dirname, './assets/html/cadastroUsuario.html'));
-}); 
+});
 
 //app.post("/cadastroUsuario" , (request, response)=>{
 //    response.sendFile(path.join(__dirname, './assets/html/cadastroUsuario.html'));
 //}); 
-//Fim Cadastro de Usuario
 
-app.get("/detalhesDoServico" , (request, response)=>{
+//FIM CADASTRO USUARIO
+//INICIO DETALHES DO SERVICO
+app.get("/detalhesDoServico", (request, response) => {
     response.sendFile(path.join(__dirname, './assets/html/detalhesDoServico.html'));
-}); 
-
-app.get("/login" , (request, response)=>{
+});
+//FIM DETALHES DO SERVICO
+//INICIO LOGIN
+app.get("/login", (request, response) => {
     response.sendFile(path.join(__dirname, './assets/html/login.html'));
 });
-app.post("/login" , (request, response)=>{
+app.post("/login", (request, response) => {
     response.sendFile(path.join(__dirname, './assets/html/login.html'));
 });
-
-
-app.get("/missao" , (request, response)=>{
+//FIM LOGIN
+//INICIO MISSAO
+app.get("/missao", (request, response) => {
     response.sendFile(path.join(__dirname, './assets/html/missao.html'));
-}); 
-
-app.get("/quemsomos" , (request, response)=>{
+});
+//FIM MISSAO
+//INICIO QUEM SOMOS
+app.get("/quemsomos", (request, response) => {
     response.sendFile(path.join(__dirname, './assets/html/quemsomos.html'));
-}); 
+});
+//FIM QUEM SOMOS
+//INICIO RESULTADO
+const servicos = require("./assets/dados/servicos.json");
+const titulo = {titulo: "SERVIÇOS ENCONTRADOS"};
 
-app.get("/resultado" , (request, response)=>{
-    response.sendFile(path.join(__dirname, './assets/html/resultado.html'));
-}); 
+app.get("/resultado", (request, response) => {
+    response.render("./layout/template", { conteudo: "resultado", servicos: servicos , titulo: titulo });
+});
 
+//FIM RESULTADOS
+//FIM ROTAS
 
-app.listen(3031, function(){
+//CHAMADA DO SERVIDOR
+app.listen(3031, function () {
     console.log("Servidor esta rodando na porta 3031");
 });
