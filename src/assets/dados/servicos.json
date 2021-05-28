@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "prestador": "Jairinho Pet`s",
+        "email": "jairinho@pet.com.br",
+        "telefone": "(41)33333-3333",
+        "periodoDeAtendimento": "Manhã e tarde.",
+        "descricaoDoServico": "Serviço de banho em cães a partir de $20 a $100, de porte pequeno , médio e grande."
+    },
+    {
+        "id": 2,
+        "prestador": "Tia Renata Pet",
+        "email": "tiarenata@pet.com.br",
+        "telefone": "(41)33333-3333",
+        "periodoDeAtendimento": "Manhã e tarde.",
+        "descricaoDoServico": "Serviço de banho em cães a partir de $20 a $100, de porte pequeno , médio e grande."
+    },
+    {
+        "id": 3,
+        "prestador": "Cantinho do Peixano",
+        "email": "peixano@pet.com.br",
+        "telefone": "(41)33333-3333",
+        "periodoDeAtendimento": "Manhã e tarde.",
+        "descricaoDoServico": "Serviço de banho em cães a partir de $20 a $100, de porte pequeno , médio e grande."
+    }
+]
