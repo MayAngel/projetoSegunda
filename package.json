@@ -1,7 +1,7 @@
 {
-  "name": "projetoSegunda",
+  "name": "projetosegunda",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/MayAngel/projetoSegunda.git",
   "author": "Kleyton Klein <17971295+Tkporto@users.noreply.github.com>",
   "license": "MIT",
