@@ -8,11 +8,15 @@
     background-color: rgb(253, 250, 222);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-     background-image: url(../img/servicos.jpg);
-     background-position: center;
-     background-size: contain;
+     
+     
+}
+
+.body-index-img {
+    background-image: url(../img/servicos.jpg);
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    
 }
 
 .body-index-login{
