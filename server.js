@@ -68,7 +68,8 @@ app.get("/missao", (request, response) => {
 //FIM MISSAO
 //INICIO QUEM SOMOS
 app.get("/quemsomos", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/quemsomos.html'));
+    response.render("layout/template", {conteudo: "quemsomos"});
+    //response.(path.join(__dirname, './static/html/quemsomos.html'));
 });
 //FIM QUEM SOMOS
 //INICIO RESULTADO
