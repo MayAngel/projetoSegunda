@@ -63,7 +63,7 @@ app.get("/detalhesDoServico", (request, response) => {
 
 //INICIO MISSAO
 app.get("/missao", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/missao.html'));
+    response.render("layout/template", {conteudo: "missao"});
 });
 //FIM MISSAO
 //INICIO QUEM SOMOS

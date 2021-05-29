@@ -22,5 +22,13 @@
         "telefone": "(41)33333-3333",
         "periodoDeAtendimento": "Manhã e tarde.",
         "descricaoDoServico": "Serviço de banho em cães a partir de $20 a $100, de porte pequeno , médio e grande."
+    },
+    {
+        "id": 4,
+        "prestador": "Pet & Cia",
+        "email": "petecia@pet.com.br",
+        "telefone": "(41)33333-3333",
+        "periodoDeAtendimento": "Manhã e tarde.",
+        "descricaoDoServico": "Serviço de banho em cães a partir de $20 a $100, de porte pequeno , médio e grande."
     }
 ]
