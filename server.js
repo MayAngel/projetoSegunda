@@ -17,16 +17,27 @@ app.use(express.static(path.join(__dirname, "./static")));
 
 //INICIO ROTAS
 
+//INICIO LOGIN
+app.get("/", (request, response) => {
+    response.sendFile(path.join(__dirname, './static/html/login.html'));
+});
+app.post("/login", (request, response) => {
+    response.sendFile(path.join(__dirname, './static/html/login.html'));
+});
+//FIM LOGIN
+
 //INICIO INDEX
 app.get("/index", (request, response) => {
     response.render("layout/template", {conteudo: "index"});
 });
 //FIM INDEX
+
 //INICIO BUSCAR
 app.get("/buscar", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/buscar.html'));
+    response.render("layout/template", {conteudo: "buscar"});
 });
 //FIM BUSCAR
+
 //INICIO CADASTRO
 app.get("/cadastro", (request, response) => {
     response.sendFile(path.join(__dirname, './static/html/cadastro.html'));
@@ -39,25 +50,17 @@ app.post("/cadastro", (request, response) => {
 app.get("/cadastroUsuario", (request, response) => {
     response.sendFile(path.join(__dirname, './static/html/cadastroUsuario.html'));
 });
-
 //app.post("/cadastroUsuario" , (request, response)=>{
 //    response.sendFile(path.join(__dirname, './assets/html/cadastroUsuario.html'));
 //}); 
-
 //FIM CADASTRO USUARIO
+
 //INICIO DETALHES DO SERVICO
 app.get("/detalhesDoServico", (request, response) => {
     response.sendFile(path.join(__dirname, './static/html/detalhesDoServico.html'));
 });
 //FIM DETALHES DO SERVICO
-//INICIO LOGIN
-app.get("/", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/login.html'));
-});
-app.post("/login", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/login.html'));
-});
-//FIM LOGIN
+
 //INICIO MISSAO
 app.get("/missao", (request, response) => {
     response.sendFile(path.join(__dirname, './static/html/missao.html'));
