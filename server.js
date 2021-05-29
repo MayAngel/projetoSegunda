@@ -18,10 +18,9 @@ app.use(express.static(path.join(__dirname, "./static")));
 //INICIO ROTAS
 
 //INICIO INDEX
-app.get("/", (request, response) => {
+app.get("/index", (request, response) => {
     response.render("layout/template", {conteudo: "index"});
 });
-
 //FIM INDEX
 //INICIO BUSCAR
 app.get("/buscar", (request, response) => {
@@ -52,7 +51,7 @@ app.get("/detalhesDoServico", (request, response) => {
 });
 //FIM DETALHES DO SERVICO
 //INICIO LOGIN
-app.get("/login", (request, response) => {
+app.get("/", (request, response) => {
     response.sendFile(path.join(__dirname, './static/html/login.html'));
 });
 app.post("/login", (request, response) => {
