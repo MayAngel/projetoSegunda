@@ -1,11 +1,8 @@
 const express = require('express');
 //const ejs = require('ejs')
 const path = require('path');
-
 const port = 3031;
-
 const app = express();
-
 
 //app.use(express.static(path.join(__dirname, '../src')));
 
@@ -19,22 +16,22 @@ app.use(express.static(path.join(__dirname, "./static")));
 
 //INICIO LOGIN
 app.get("/", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/login.html'));
+    response.render("layout/templateVazio", { conteudo: "login" });
 });
 app.post("/login", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/login.html'));
+    response.render("layout/templateVazio", { conteudo: "login" });
 });
 //FIM LOGIN
 
 //INICIO INDEX
 app.get("/index", (request, response) => {
-    response.render("layout/template", {conteudo: "index"});
+    response.render("layout/template", { conteudo: "index" });
 });
 //FIM INDEX
 
 //INICIO BUSCAR
 app.get("/buscar", (request, response) => {
-    response.render("layout/template", {conteudo: "buscar"});
+    response.render("layout/template", { conteudo: "buscar" });
 });
 //FIM BUSCAR
 
@@ -63,21 +60,22 @@ app.get("/detalhesDoServico", (request, response) => {
 
 //INICIO MISSAO
 app.get("/missao", (request, response) => {
-    response.render("layout/template", {conteudo: "missao"});
+    response.render("layout/template", { conteudo: "missao" });
 });
 //FIM MISSAO
 //INICIO QUEM SOMOS
 app.get("/quemsomos", (request, response) => {
-    response.render("layout/template", {conteudo: "quemsomos"});
+    //var titulo = {titulo: "TITLO QUALQUER"};  
+    response.render("layout/template", { conteudo: "quemsomos" });
     //response.(path.join(__dirname, './static/html/quemsomos.html'));
 });
 //FIM QUEM SOMOS
 //INICIO RESULTADO
 const servicos = require("./dados/servicos.json");
-//const titulo = {titulo: "SERVIÇOS ENCONTRADOS"};
+var titulo = { titulo: "SERVIÇOS ENCONTRADOS" };
 
 app.get("/resultado", (request, response) => {
-    response.render("layout/template", { conteudo: "resultado", servicos: servicos}); // , titulo: titulo 
+    response.render("layout/template1", { conteudo: "resultado", servicos: servicos, titulo: titulo });
 });
 
 //FIM RESULTADOS
