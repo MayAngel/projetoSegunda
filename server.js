@@ -37,19 +37,20 @@ app.get("/buscar", (request, response) => {
 
 //INICIO CADASTRO
 app.get("/cadastro", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/cadastro.html'));
+    response.render("layout/template", { conteudo: "cadastro" });
 });
 app.post("/cadastro", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/cadastro.html'));
+    response.render("layout/template", { conteudo: "cadastro" });
 });
 //FIM CADASTRO
+
 //INICIO CADASTRO USUARIO
 app.get("/cadastroUsuario", (request, response) => {
-    response.sendFile(path.join(__dirname, './static/html/cadastroUsuario.html'));
+    response.render("layout/template", { conteudo: "cadastroUsuario" });
 });
-//app.post("/cadastroUsuario" , (request, response)=>{
-//    response.sendFile(path.join(__dirname, './assets/html/cadastroUsuario.html'));
-//}); 
+app.post("/cadastroUsuario" , (request, response)=>{
+    response.render("layout/template", { conteudo: "cadastroUsuario" });
+}); 
 //FIM CADASTRO USUARIO
 
 //INICIO DETALHES DO SERVICO
