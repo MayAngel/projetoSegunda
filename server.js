@@ -10,7 +10,7 @@ const app = express();
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, './views'));
 
-app.use(express.static(path.join(__dirname, "./static")));
+app.use(express.static(path.join(__dirname,  "./static")));
 
 //INICIO ROTAS
 
@@ -76,10 +76,21 @@ const servicos = require("./dados/servicos.json");
 var titulo = { titulo: "SERVIÇOS ENCONTRADOS" };
 
 app.get("/resultado", (request, response) => {
-    response.render("layout/template1", { conteudo: "resultado", servicos: servicos, titulo: titulo });
+    response.render("layout/templateTitulo", { conteudo: "resultado", servicos: servicos, titulo: titulo });
 });
-
 //FIM RESULTADOS
+//INICIO DETALHES DO SERVICO
+var titulo = { titulo: "DETALHES DO SERVIÇO" };
+
+app.get("/detalhesDoServico/:id", (request, response) => {
+
+    var id = request.params.id;
+    id = id - 1;
+    var servico = servicos[id];
+    response.render("layout/templateTitulo", {  conteudo: "detalhesDoServico", servico: servico, titulo: titulo });
+
+});
+//FIM DETALHES DO SERVICO
 //FIM ROTAS
 
 //CHAMADA DO SERVIDOR
