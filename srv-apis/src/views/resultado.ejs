@@ -1,0 +1,30 @@
+<section class="servico">
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Prestador de Serviço</th>
+                <th scope="col">Descrição do Serviço</th>
+                <th scope="col">Detalhes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% servicos.forEach(function(servico){ %>
+                <tr>
+                    <td>
+                        <%= servico.prestador%>
+                    </td>
+                    <td>
+                        <%= servico.descricaoDoServico%>
+                    </td>
+                    <td><a href="/detalhesDoServico/<%=servico.id%>"><button>Detalhes</button></a></td>
+               
+                    </td>
+                </tr>
+                <% })%>
+        </tbody>
+    </table>
+
+
+
+</section>
