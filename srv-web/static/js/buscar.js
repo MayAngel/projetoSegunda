@@ -7,7 +7,7 @@ export {
   carregarPaginaBuscar
 };
 
-// Inicia a página sobre.
+// Inicia a página buscar.
 async function carregarPaginaBuscar() {
   await carregarHtml('buscar', 'main');
 };

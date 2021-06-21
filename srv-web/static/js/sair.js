@@ -7,7 +7,7 @@ export {
   carregarPaginaSair
 };
 
-// Inicia a página sobre.
+// Inicia a página sair.
 async function carregarPaginaSair() {
   await carregarHtml('sair', 'main');
 };

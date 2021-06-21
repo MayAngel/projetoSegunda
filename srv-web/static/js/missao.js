@@ -7,7 +7,7 @@ export {
   carregarPaginaMissao
 };
 
-// Inicia a página sobre.
+// Inicia a página missão.
 async function carregarPaginaMissao() {
   await carregarHtml('missao', 'main');
 };
