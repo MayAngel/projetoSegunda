@@ -80,3 +80,7 @@ app.get("/resultado", (request, response) => {
 app.listen(3000, function () {
     console.log("Servidor esta rodando na porta 3000");
 });
+
+/**
+ * a parte de subir as telas que não precisam de alteração com o banco, é que são estáticos: tela quem somos, tela sair, tela missão, tela buscar, tela detalhes podem ser criadas uma função que vai apontar. Tem essa explicação na aula dia 14, poderia ser uma atividade para a @Liandra  ou para o @Guh ? Quem puder poderia, por favor, responder aqui no grupo ?
+ */
